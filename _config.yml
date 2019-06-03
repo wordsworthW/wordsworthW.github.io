@@ -1,7 +1,7 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Wordsworth`s Blog
+description: 去年的家书两行，读来又热了眼眶
 
-url: http://brianmaierjr.github.com/long-haul
+url: https://github.com/wordsworthW/wordsworthW.github.io
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -20,9 +20,9 @@ navigation:
     url: /contact
 
 social:
-  github: brianmaierjr
-  twitter: brianmaierjr
-  facebook: brianmaierjr
-  email: brimaidesigns@gmail.com
+  github: wordsworthW
+  # twitter: brianmaierjr
+  # facebook: brianmaierjr
+  email: alimasama@163.com
 
 google_analytics: "UA-58263416-1"

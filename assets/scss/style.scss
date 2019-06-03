@@ -6,7 +6,7 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
 
 // Site configuration
-@import "config"; 
+@import "config";
 
 // Import Partials
 @import "partials/typography";
@@ -14,16 +14,98 @@
 
 // Modules
 @import "modules/buttons";
-@import "modules/forms"; 
+@import "modules/forms";
 @import "modules/tables";
-@import "modules/syntax"; 
+@import "modules/syntax";
 
 // Mobile up base styles
 @import "breakpoints/mobileup";
 
 // Import media queries add more as you desire
-@media only screen and (min-width: 800px) { @import "breakpoints/800up";} 
-@media only screen and (min-width: 1200px) { @import "breakpoints/1200up";} 
+@media only screen and (min-width: 800px) { @import "breakpoints/800up";}
+@media only screen and (min-width: 1200px) { @import "breakpoints/1200up";}
 
 // If IE support is needed you can add them here or create another stylesheet for specific IE fixes
+
+.header {
+  background-image: url("../img/main.png");
+
+  .description {
+    float: left;
+    clear: left;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .description {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-toggle {
+    position: absolute;
+    top: 0.25em;
+    margin: 0;
+    right: 0.5em;
+    -webkit-background-size: 100px 100px;
+    -moz-background-size: 100px 100px;
+    -o-background-size: 100px 100px;
+    background-size: 100px 100px;
+    user-select: none;
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    float: right;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: #444 url("../img/menu.gif") no-repeat 50% 50%;
+    background-size: 100%;
+  }
+
+  .nav-collapse {
+    z-index: 1;
+  }
+
+  .nav-collapse ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    list-style: none;
+  }
+
+  .nav-collapse ul li {
+    width: 100%;
+    display: block;
+    background: #779bec;
+    border-bottom: 2px solid #f6f9ff;
+
+    &.current {
+      background-color: #2a54ad;
+    }
+  }
+
+  .nav-collapse ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 2rem;
+  }
+
+  .js .nav-collapse {
+    clip: rect(0 0 0 0);
+    max-height: 0;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    zoom: 1;
+    clear: both;
+    width: 100%;
+  }
+
+  .nav-collapse.opened {
+    max-height: 9999px;
+  }
+}
 
